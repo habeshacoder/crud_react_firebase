@@ -5,7 +5,11 @@ In this project I have included these concepts :
   reactjs
   react emotion
   styled systems
+  output :
+  ![crud_react2](https://user-images.githubusercontent.com/111964729/217342995-13f2e2eb-e7c7-41e6-a807-249f0bb01b6b.png)
+  ![react_crud](https://user-images.githubusercontent.com/111964729/217342574-8b6ce361-e04a-4f7b-8ae3-19fe4d9a4cb6.png)
   
+
 this app simply perform crud operations .
   
 
