@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Text } from "rebass";
 
 const Header = () => {
   return (
@@ -9,14 +10,14 @@ const Header = () => {
         style={{ backgroundColor: "rgb(120, 120, 120)" }}
       >
         <NavLink to="/" className="btn" style={{ color: "white" }}>
-          Home
+          <Text> Home</Text>
         </NavLink>
 
         <NavLink to="/add" className="btn" style={{ color: "white" }}>
-          Add
+          <Text>Add</Text>
         </NavLink>
         <NavLink to="/about" className="btn" style={{ color: "white" }}>
-          About
+          <Text>About</Text>
         </NavLink>
       </nav>
     </div>

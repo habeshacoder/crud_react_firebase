@@ -3,6 +3,8 @@ import { useParams, useHistory } from "react-router-dom";
 import { isEmpty } from "lodash";
 import { useSelector, useDispatch } from "react-redux";
 import { addContactStart, editContactStart } from "../redux/actions";
+import { Text } from "rebass";
+import { css } from "@emotion/react";
 
 const AddEdit = () => {
   const values = {
@@ -88,7 +90,9 @@ const AddEdit = () => {
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label className="bmd-label-floating">Name</label>
+              <label className="bmd-label-floating">
+                <Text>Name</Text>
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -98,7 +102,9 @@ const AddEdit = () => {
               />
             </div>
             <div className="form-group">
-              <label className="bmd-label-floating">height</label>
+              <label className="bmd-label-floating ">
+                <Text>height</Text>
+              </label>
               <input
                 type="number"
                 className="form-control"
@@ -108,7 +114,9 @@ const AddEdit = () => {
               />
             </div>
             <div className="form-group">
-              <label className="bmd-label-floating">Email</label>
+              <label className="bmd-label-floating">
+                <Text>Email</Text>
+              </label>
               <input
                 type="email"
                 className="form-control"
@@ -118,7 +126,9 @@ const AddEdit = () => {
               />
             </div>
             <div className="form-group">
-              <label className="bmd-label-floating">gender</label>
+              <label className="bmd-label-floating">
+                <Text>gender</Text>
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -129,7 +139,7 @@ const AddEdit = () => {
             </div>
             <button className="btn btn-default">Cancel</button>
             <button type="submit" className="btn btn-success btn-raised">
-              Submit
+              <Text>Submit</Text>
             </button>
           </form>
         </div>

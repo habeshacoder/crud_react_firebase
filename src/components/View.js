@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Text } from "rebass";
+import { css } from "@emotion/react";
 
 const View = () => {
   const currentId = useParams();
@@ -15,12 +17,47 @@ const View = () => {
             <div class="card">
               <div class="card-header lead">User Detail</div>
               <div class="card-body">
-                <p class="card-text">Name: {data[id].fullName}</p>
-                <p class="card-text">height: {data[id].height}</p>
-                <p class="card-text">Email: {data[id].email}</p>
-                <p class="card-text">gender: {data[id].gender}</p>
+                <p
+                  class="card-text"
+                  css={css`
+                    font-size: 30px;
+                  `}
+                >
+                  <Text>Name: {data[id].fullName}</Text>
+                </p>
+                <p
+                  class="card-text"
+                  css={css`
+                    font-size: 30px;
+                  `}
+                >
+                  <Text>height: {data[id].height}</Text>
+                </p>
+                <p
+                  class="card-text"
+                  css={css`
+                    font-size: 30px;
+                  `}
+                >
+                  <Text>Email: {data[id].email}</Text>
+                </p>
+                <p
+                  class="card-text"
+                  css={css`
+                    font-size: 30px;
+                  `}
+                >
+                  <Text>gender: {data[id].gender}</Text>
+                </p>
                 <Link to="/">
-                  <a className="btn btn-info">Go Back</a>
+                  <a
+                    className="btn btn-info"
+                    css={css`
+                      font-size: 30px;
+                    `}
+                  >
+                    <Text>Go Back</Text>
+                  </a>
                 </Link>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./ContactForm";
 import firebaseDb from "../firebase";
+import { Text } from "rebass";
 
 const Contacts = () => {
   const [data, setData] = useState({});
@@ -54,7 +55,9 @@ const Contacts = () => {
     <>
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <h1 className="display-4 text-center">Contact Register</h1>
+          <h1 className="display-4 text-center">
+            <Text>Contact Register</Text>
+          </h1>
         </div>
       </div>
       <div className="row">
@@ -69,11 +72,21 @@ const Contacts = () => {
           <table className="table table-borderless table-stripped">
             <thead className="thread-light">
               <tr>
-                <th>Full Name</th>
-                <th>height</th>
-                <th>Email</th>
-                <th>gender</th>
-                <th>Action</th>
+                <th>
+                  <Text>Full Name</Text>
+                </th>
+                <th>
+                  <Text>height</Text>
+                </th>
+                <th>
+                  <Text>Email</Text>
+                </th>
+                <th>
+                  <Text>gender</Text>
+                </th>
+                <th>
+                  <Text>Action</Text>
+                </th>
               </tr>
             </thead>
             <tbody>

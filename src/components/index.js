@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getContactsStart, deleteContactStart } from "../redux/actions";
 import { css } from "@emotion/react";
+import { Text } from "rebass";
 
 const ListRecord = () => {
   // const [data, setData] = useState({});
@@ -51,18 +52,30 @@ const ListRecord = () => {
                   }
                 `}
               >
-                Contact Management System
+                <Text> Contact Management System</Text>
               </h1>
             </div>
             <table className="table table-bordered table-striped">
               <thead className="thead-dark">
                 <tr>
-                  <th scope="col">No.</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">height</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">gender</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">
+                    <Text>No.</Text>
+                  </th>
+                  <th scope="col">
+                    <Text>Name</Text>
+                  </th>
+                  <th scope="col">
+                    <Text>height</Text>
+                  </th>
+                  <th scope="col">
+                    <Text>Email</Text>
+                  </th>
+                  <th scope="col">
+                    <Text>gender</Text>
+                  </th>
+                  <th scope="col">
+                    <Text>Action</Text>
+                  </th>
                 </tr>
               </thead>
               <tbody>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Text } from "rebass";
+import { css } from "@emotion/react";
+
 const About = () => {
   return (
     <div className="container mt-5">
