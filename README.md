@@ -1,6 +1,13 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I have included these concepts :
+  firebase as backend (firebase real time database)
+  reactjs
+  react emotion
+  styled systems
+  
+this app simply perform crud operations .
+  
 
 ## Available Scripts
 
